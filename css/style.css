@@ -1,0 +1,161 @@
+:root {
+    --color-text-dark: #151D41;
+    --color-text-green: #0FBF61;
+    --color-background-green: #0fbf6131;
+    --color-white: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text-dark);
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+a,
+h3,
+h4,
+h5 {
+    font-family: "Montserrat Regular";
+}
+
+li:not(:nth-child(1)) {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.active,
+li:not(:nth-child(1)):hover {
+    border-bottom: 3px solid var(--color-text-green);
+}
+
+.logo {
+    height: 70%;
+    width: 70%;
+}
+
+.logo a {
+	color: var(--color-text-green);
+	font-family: "Montserrat Bold";
+    font-size: 35px;
+}
+
+nav h3 {
+    cursor: pointer;
+    margin-right: 250px;
+    background-color: var(--color-white);
+    padding: .5em 1.5em .5em 1.5em;
+    border-radius: 4px;
+}
+
+nav h3:hover {
+    box-shadow: 3px 3px 7px var(--color-white);
+    transition: all ease .2s;
+}
+
+h3 a {
+    color: var(--color-text-green);
+}
+
+h5 {
+    padding: 5px 10px 5px 10px;
+    width: fit-content;
+    border-radius: 3px;
+    color: var(--color-text-green);
+    background-color: var(--color-background-green);
+}
+
+h1 {
+    font-family: "Montserrat Bold";
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin: 0;
+}
+
+p {
+    width: 37%;
+    line-height: 1.5;
+    font-family: "Montserrat Light";
+    color: var(--color-text-dark);
+    font-weight: 300;
+}
+
+.container-body {
+    padding-left: 170px;
+    padding-top: 130px;
+}
+
+.button-group {
+    display: flex;
+}
+
+.hire-me {
+    cursor: pointer;
+    background-color: var(--color-text-green);
+    padding: 10px 25px 10px 25px;
+    border-radius: 4px;
+}
+
+.hire-me:hover {
+    box-shadow: 3px 3px 7px var(--color-text-green);
+    transition: all ease .2s;
+}
+
+.hire-me a {
+    color: var(--color-white);
+}
+
+.explore {
+    cursor: pointer;
+    background-color: var(--color-white);
+    padding: 10px 25px 10px 25px;
+    border: 1px solid var(--color-text-dark);
+    border-radius: 4px;
+}
+
+.explore a {
+    color: var(--color-text-dark);
+}
+
+.explore:hover {
+    box-shadow: 3px 3px 7px var(--color-text-dark);
+    transition: all ease .2s;
+}
+
+.button-group .explore {
+    margin-left: 20px;
+}
